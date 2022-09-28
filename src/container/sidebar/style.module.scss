@@ -1,0 +1,39 @@
+.sideBar {
+  background-color: #020424;
+  height: 100vh;
+  max-width: 15rem;
+  padding: 1rem 1rem 0;
+
+  .collapseSidebarBtn {
+    color: #5b6079;
+    float: right;
+  }
+
+  .menuOptionContainerInactive {
+    color: #5b6079;
+  }
+  .menuOptionContainerActive {
+    color: #f5faff;
+  }
+
+  .menuGroupHeading {
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    color: #5b6079;
+    padding: 1.5rem 0px 0.5rem;
+  }
+
+  .mainOption {
+    display: flex;
+    gap: 1rem;
+    padding-top: 13px;
+    .menuOptionName {
+      flex-grow: 1;
+    }
+  }
+  .subMenuOption {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 0.9em;
+  }
+}
