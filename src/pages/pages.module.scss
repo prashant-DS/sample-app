@@ -1,0 +1,7 @@
+.rootPage {
+  width: 100vw;
+  display: flex;
+  & > *:last-child {
+    flex-grow: 1;
+  }
+}
