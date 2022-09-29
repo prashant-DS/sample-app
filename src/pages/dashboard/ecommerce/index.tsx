@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillDashboard, AiFillPieChart, AiFillProfile } from "react-icons/ai";
+import Profile from "../../../components/profile";
 import SmallDetailCard from "../../../components/smallDetailCard";
 import OrderStats from "../../../container/orderStats";
 import Overview from "../../../container/overview";
@@ -66,7 +67,16 @@ function Ecommerce() {
           />
         </div>
       </div>
-      <div className={style.profileSection}></div>
+      <div className={style.profileSection}>
+        <Profile
+          imageURL="#c8e7ff"
+          backgroundURL="#ffd7d5"
+          name="Prashant Kumar"
+          designation="Software Engineer"
+          products="1,250"
+          followers="2.2k"
+        />
+      </div>
     </div>
   );
 }

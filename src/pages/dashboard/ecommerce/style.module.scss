@@ -1,5 +1,8 @@
 .container {
+  display: flex;
+  gap: 20px;
   .dataSection {
+    flex-grow: 0.6;
     .smallCards {
       display: flex;
       flex-wrap: wrap;
@@ -12,5 +15,8 @@
     .overviewWrapper {
       margin: 1rem 0;
     }
+  }
+  .profileSection {
+    flex-grow: 0.4;
   }
 }
