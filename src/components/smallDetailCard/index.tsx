@@ -7,7 +7,7 @@ interface SmallDetailCardProps {
   imageText?: string;
   heading: string;
   value: string;
-  percentageChange: string;
+  percentageChange?: string;
   useMinimumSpace?: boolean;
 }
 
@@ -35,13 +35,17 @@ function SmallDetailCard({
         <div className={style.heading}>{heading}</div>
         <div className={style.value}>{value}</div>
       </div>
-      <div className={style.change}>
-        <Badge
-          text={percentageChange}
-          backgroundColor={percentageChange[0] === "+" ? "#ecf6ed" : "#ffeeeb"}
-          color={percentageChange[0] === "+" ? "#84b08b" : "#e0a6aa"}
-        />
-      </div>
+      {percentageChange && (
+        <div className={style.change}>
+          <Badge
+            text={percentageChange}
+            backgroundColor={
+              percentageChange[0] === "+" ? "#ecf6ed" : "#ffeeeb"
+            }
+            color={percentageChange[0] === "+" ? "#84b08b" : "#e0a6aa"}
+          />
+        </div>
+      )}
     </div>
   );
 }

@@ -1,8 +1,10 @@
 .sideBar {
   height: 100vh;
-  max-width: 15rem;
+  min-width: 15rem;
   padding: 1rem 1rem 0;
   overflow: auto;
+  position: sticky;
+  top: 0;
   &::-webkit-scrollbar {
     display: none;
   }
