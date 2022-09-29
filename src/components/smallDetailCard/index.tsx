@@ -40,9 +40,19 @@ function SmallDetailCard({
           <Badge
             text={percentageChange}
             backgroundColor={
-              percentageChange[0] === "+" ? "#ecf6ed" : "#ffeeeb"
+              percentageChange[0] === "+"
+                ? "#ecf6ed"
+                : percentageChange[0] === "-"
+                ? "#ffeeeb"
+                : "#f6f7fa"
             }
-            color={percentageChange[0] === "+" ? "#84b08b" : "#e0a6aa"}
+            color={
+              percentageChange[0] === "+"
+                ? "#84b08b"
+                : percentageChange[0] === "-"
+                ? "#e0a6aa"
+                : "#494a52"
+            }
           />
         </div>
       )}

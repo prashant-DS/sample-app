@@ -1,0 +1,20 @@
+.container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow: hidden;
+
+  .heading {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+
+    & > *:last-child {
+      font-size: 0.7rem;
+      color: #b0b1b1;
+    }
+  }
+}

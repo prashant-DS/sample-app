@@ -1,7 +1,10 @@
 import React from "react";
 import { AiFillDashboard, AiFillPieChart, AiFillProfile } from "react-icons/ai";
 import SmallDetailCard from "../../../components/smallDetailCard";
+import OrderStats from "../../../container/orderStats";
 import Overview from "../../../container/overview";
+import TopProducts from "../../../container/topProducts";
+import UserActivity from "../../../container/userActivity";
 import style from "./style.module.scss";
 
 function Ecommerce() {
@@ -43,7 +46,25 @@ function Ecommerce() {
             ]}
           />
         </div>
-        <div className={style.lowerRowWrapper}></div>
+        <div className={style.smallCards}>
+          <UserActivity period="This Month" value="34,123" />
+          <OrderStats
+            orderDetails={[
+              { Completed: 5463 },
+              { Pending: 5563 },
+              { Cancel: 1263 },
+            ]}
+          />
+          <TopProducts
+            itemList={[
+              { name: "Shirt", price: "$15", count: "4.2k" },
+              { name: "Jeans", price: "$18", count: "3.8k" },
+              { name: "SmartPhones", price: "$1000", count: "2.2k" },
+              { name: "Speakers", price: "$500", count: "1.2k" },
+              { name: "Headphones", price: "$50", count: "1k" },
+            ]}
+          />
+        </div>
       </div>
       <div className={style.profileSection}></div>
     </div>
