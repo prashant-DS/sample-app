@@ -35,14 +35,15 @@ function Ecommerce() {
             change="+2.15%"
             moreData={[
               { Order_1: 5463 },
-              { Order_2: 5463 },
-              { Order_3: 5463 },
-              { Order_4: 5463 },
-              { Order_5: 5463 },
-              { Order_6: 5463 },
+              { Order_2: 5563 },
+              { Order_3: 1263 },
+              { Order_4: 6573 },
+              { Order_5: 233 },
+              { Order_6: 6963 },
             ]}
           />
         </div>
+        <div className={style.lowerRowWrapper}></div>
       </div>
       <div className={style.profileSection}></div>
     </div>
