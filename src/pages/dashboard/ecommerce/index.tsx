@@ -2,8 +2,10 @@ import React from "react";
 import { AiFillDashboard, AiFillPieChart, AiFillProfile } from "react-icons/ai";
 import Profile from "../../../components/profile";
 import SmallDetailCard from "../../../components/smallDetailCard";
+import Earning from "../../../container/earning";
 import OrderStats from "../../../container/orderStats";
 import Overview from "../../../container/overview";
+import RecentActivity from "../../../container/recentActivity";
 import TopProducts from "../../../container/topProducts";
 import UserActivity from "../../../container/userActivity";
 import style from "./style.module.scss";
@@ -75,6 +77,20 @@ function Ecommerce() {
           designation="Software Engineer"
           products="1,250"
           followers="2.2k"
+        />
+        <Earning
+          percentage={Math.ceil(Math.random() * 100)}
+          total="$26.34"
+          change="+2.65%"
+        />
+        <RecentActivity
+          details={[
+            { date: 12, month: "Aug", text: "hello world 1" },
+            { date: 14, month: "Jan", text: "hello world 2" },
+            { date: 22, month: "Jun", text: "hello world 3" },
+            { date: 2, month: "Sep", text: "hello world 4" },
+            { date: 10, month: "Dec", text: "hello world 5" },
+          ]}
         />
       </div>
     </div>
