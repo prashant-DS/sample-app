@@ -8,6 +8,7 @@ interface SmallDetailCardProps {
   heading: string;
   value: string;
   percentageChange: string;
+  useMinimumSpace?: boolean;
 }
 
 function SmallDetailCard({
@@ -16,13 +17,20 @@ function SmallDetailCard({
   heading,
   value,
   percentageChange,
+  useMinimumSpace = false,
 }: SmallDetailCardProps) {
   return (
-    <div className={style.container}>
-      <div className={style.imageContainer}>
-        {imageComponent && imageComponent}
-        {imageText && <span>{imageText}</span>}
-      </div>
+    <div
+      className={`${style.container} ${
+        useMinimumSpace ? style.minContainer : ""
+      }`}
+    >
+      {(imageComponent || imageText) && (
+        <div className={style.imageContainer}>
+          {imageComponent && imageComponent}
+          {imageText && <span>{imageText}</span>}
+        </div>
+      )}
       <div className={style.mainPart}>
         <div className={style.heading}>{heading}</div>
         <div className={style.value}>{value}</div>

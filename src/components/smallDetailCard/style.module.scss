@@ -35,3 +35,10 @@
     font-weight: bold;
   }
 }
+
+.minContainer {
+  padding: 0rem;
+  .mainPart {
+    flex-grow: 0;
+  }
+}

@@ -1,8 +1,16 @@
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px 20px;
-  * {
-    flex: 1 1 auto;
+  .dataSection {
+    .smallCards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px 20px;
+      & > * {
+        flex: 1 1 auto;
+      }
+    }
+
+    .overviewWrapper {
+      margin: 1rem 0;
+    }
   }
 }

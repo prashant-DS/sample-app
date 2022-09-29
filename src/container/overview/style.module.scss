@@ -1,0 +1,42 @@
+.container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  display: flex;
+
+  .data {
+    .heading {
+      margin-bottom: 2rem;
+      font-size: 0.8rem;
+      font-weight: bolder;
+    }
+
+    .moreDataContainerWrapper {
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      .moreDataContainer {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1px -1px 0;
+        .moreDataCell {
+          border-right: 1px solid #e4e2e2;
+          border-bottom: 1px solid #e4e2e2;
+          flex: 1 1 0px;
+          padding: 1rem;
+          .moreDataKey {
+            opacity: 0.4;
+            font-weight: 600;
+          }
+          .moreDataValue {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .graph {
+    min-width: 60%;
+  }
+}
