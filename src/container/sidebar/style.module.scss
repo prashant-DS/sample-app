@@ -10,6 +10,10 @@
     display: none;
   }
 
+  .blocker {
+    display: none;
+  }
+
   .collapseSidebarBtn {
     color: #5b6079;
     float: right;
@@ -48,7 +52,24 @@
   .sideBar {
     background-color: #020424;
     position: fixed;
-    z-index: 1;
-    left: -20rem;
+    z-index: 100;
+    &-hide {
+      left: -15rem;
+    }
+    &-show {
+      left: 0rem;
+    }
+    transition: left 350ms ease-out;
+
+    .collapseSidebarBtn {
+      background-color: #0204248f;
+      color: white;
+      left: 0px;
+      top: 0px;
+      position: fixed;
+      padding: 10px 10px 10px 0;
+      opacity: 1;
+      border-radius: 25px 10px 10px 0;
+    }
   }
 }
