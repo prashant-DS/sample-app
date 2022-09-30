@@ -7,6 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #020424;
 }
+html,
+body {
+  /* for firefox */
+  scrollbar-width: none;
+}
 * {
   box-sizing: border-box;
 }

@@ -5,6 +5,7 @@
   overflow: auto;
   position: sticky;
   top: 0;
+  scrollbar-width: none; // mozilla
   &::-webkit-scrollbar {
     display: none;
   }
