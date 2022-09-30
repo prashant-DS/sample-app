@@ -20,3 +20,12 @@
     flex-grow: 0.4;
   }
 }
+
+@media (max-width: 1000px) {
+  .container {
+    flex-wrap: wrap-reverse;
+    .profileSection {
+      flex-grow: 1;
+    }
+  }
+}

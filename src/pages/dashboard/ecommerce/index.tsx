@@ -71,8 +71,8 @@ function Ecommerce() {
       </div>
       <div className={style.profileSection}>
         <Profile
-          imageURL="#c8e7ff"
-          backgroundURL="#ffd7d5"
+          imageColor="#c8e7ff"
+          backgroundColor="#ffd7d5"
           name="Prashant Kumar"
           designation="Software Engineer"
           products="1,250"

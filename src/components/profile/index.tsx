@@ -3,8 +3,8 @@ import { Interface } from "readline";
 import style from "./style.module.scss";
 
 interface ProfileProps {
-  backgroundURL: string;
-  imageURL: string;
+  backgroundColor: string;
+  imageColor: string;
   name: string;
   designation: string;
   products: string;
@@ -12,8 +12,8 @@ interface ProfileProps {
 }
 
 function Profile({
-  backgroundURL,
-  imageURL,
+  backgroundColor,
+  imageColor,
   name,
   designation,
   products,
@@ -23,12 +23,12 @@ function Profile({
     <div className={style.container}>
       <div
         className={style.bg}
-        style={{ backgroundColor: backgroundURL }}
+        style={{ backgroundColor: backgroundColor }}
       ></div>
       <div className={style.imageContainer}>
         <div
           className={style.image}
-          style={{ backgroundColor: imageURL }}
+          style={{ backgroundColor: imageColor }}
         ></div>
       </div>
       <div className={style.name}>{name}</div>

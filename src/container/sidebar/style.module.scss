@@ -42,3 +42,12 @@
     font-size: 0.9em;
   }
 }
+
+@media (max-width: 768px) {
+  .sideBar {
+    background-color: #020424;
+    position: fixed;
+    z-index: 1;
+    left: -100%;
+  }
+}
