@@ -43,11 +43,11 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .sideBar {
     background-color: #020424;
     position: fixed;
     z-index: 1;
-    left: -100%;
+    left: -20rem;
   }
 }
